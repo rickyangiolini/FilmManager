@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/details_file_name"
+        android:layout_width="92dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/details_film_name"
+        android:layout_marginTop="198dp"
+        android:text="File Name:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/details_date_released"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/details_header"
+        android:layout_marginTop="133dp"
+        android:text="Date Released:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/details_film_name"
+        android:layout_width="92dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="72dp"
+        android:text="Name:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/details_header"
+        android:layout_width="296dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/details_film_name"
+        android:layout_marginTop="22dp"
+        android:text="Film Details:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/file_name_details"
+        android:layout_width="212dp"
+        android:layout_height="31dp"
+        android:layout_alignStart="@+id/date_released_details"
+        android:layout_alignTop="@+id/details_file_name" />
+
+    <TextView
+        android:id="@+id/date_released_details"
+        android:layout_width="212dp"
+        android:layout_height="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/details_date_released"
+        android:layout_marginEnd="25dp" />
+
+    <TextView
+        android:id="@+id/film_name_details"
+        android:layout_width="212dp"
+        android:layout_height="31dp"
+        android:layout_alignStart="@+id/file_name_details"
+        android:layout_alignTop="@+id/details_film_name" />
+
+    <Button
+        android:id="@+id/stop_service_button"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="169dp"
+        android:layout_marginStart="103dp"
+        android:text="Stop Playing" />
+</RelativeLayout>
